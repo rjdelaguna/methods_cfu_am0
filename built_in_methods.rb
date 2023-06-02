@@ -8,35 +8,33 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
-"Hello World".include?("Hello")
 # The include? method is called on the string "Hello World"
 # The arguement of include? answers the question "Is the passed in string represented in the referenced string or variable?""
 # The return value is true.
+"Hello World".include?("Hello")
 
-"Hello World".end_with?("Hello")
 # The end_with? method is called on the string "Hello World".
 # The arguement of end_with? answers the question "Does the referenced string end with the passed in string?"
 # The return value is false.
+"Hello World".end_with?("Hello")
 
-"Hello World".end_with?("rld")
 # The end_with? method is called on the string "Hello World".
 # The arguement of end_with? answers the question "Does the referenced string end with the passed in string?" 
 # Here it is made clear that end_with? is looking for a match of characters, not the last word.
 # The return value is true.
+"Hello World".end_with?("rld")
 
-12.even?
 # The even? method is called on integer 12.
 # The arguement of even? answers the question "Is this an even number?"
 # The return value is true.
 # This method only works on integers.
+12.even?
 
-18.next
 # The next method is called on integer 18.
 # No arguement is passed. next has one clear job, to move the integer up to the next integer.
 # The return value is 19.
 # This method only works on integers.
-
+18.next
 
 
 # SECTION 2: Calling methods on variables assigned to strings.
@@ -53,7 +51,18 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+# The chop method is called on the name variable, which stores the string object "Robert".
+# No arguements are passed. Chop removes the last character from the string.
+#There is a chop! variant that makes the change permanent.
+name = "Robert"
+puts name.chop
 
+# The split method is called on the greeting variable, which stores the string "Good morning to you". 
+# No arguements are passed. Split takes a string and turns it into an array. 
+# The characters are split by the spaces.
+#This would return ["Good", "morning", "to", "you"]
+greeting = "Good morning to you."
+p greeting.split
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
