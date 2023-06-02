@@ -70,7 +70,17 @@ p greeting.split
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# The round method is called on the number_one variable, which stores float 4.25.
+# No arguements are passed. Round takes a Float and rounds it to it's nearset full value.
+# The return value is 5.
+number_one = 4.5
+puts number_one.round
 
+# The to_s method is called on the number_two variable, which stores the float 7.89.
+# No arguements are passed. to_s turns the current output into a string. 
+# This works on integers, floats, and booleans.
+number_two = 7.89
+p number_two.to_s
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
