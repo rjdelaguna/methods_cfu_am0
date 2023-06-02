@@ -87,3 +87,15 @@ p number_two.to_s
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# The length method is called to the colors array.
+# length simply returns number of elements in the referenced array.
+# The return value is 5.
+colors = ["red", "blue", "green", "pink", "yellow"]
+puts colors.length
+
+# The uniq method is called to the sports array.
+# uniq returns the elements in the array, leaving out duplicates.
+# The  return value would be ["football", "soccer", "basketball", "baseball"]
+sports = ["football", "soccer", "basketball", "baseball", "football", "basketball"]
+puts sports.uniq
