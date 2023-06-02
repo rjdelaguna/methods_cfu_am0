@@ -10,18 +10,32 @@
 
 
 "Hello World".include?("Hello")
-
+# The include? method is called on the string "Hello World"
+# The arguement of include? answers the question "Is the passed in string represented in the referenced string or variable?""
+# The return value is true.
 
 "Hello World".end_with?("Hello")
-
+# The end_with? method is called on the string "Hello World".
+# The arguement of end_with? answers the question "Does the referenced string end with the passed in string?"
+# The return value is false.
 
 "Hello World".end_with?("rld")
-
+# The end_with? method is called on the string "Hello World".
+# The arguement of end_with? answers the question "Does the referenced string end with the passed in string?" 
+# Here it is made clear that end_with? is looking for a match of characters, not the last word.
+# The return value is true.
 
 12.even?
-
+# The even? method is called on integer 12.
+# The arguement of even? answers the question "Is this an even number?"
+# The return value is true.
+# This method only works on integers.
 
 18.next
+# The next method is called on integer 18.
+# No arguement is passed. next has one clear job, to move the integer up to the next integer.
+# The return value is 19.
+# This method only works on integers.
 
 
 
